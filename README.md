@@ -39,13 +39,13 @@ pip install causal_conv1d==1.0.0  # causal_conv1d-1.0.0+cu118torch1.13cxx11abiFA
 pip install mamba_ssm==1.0.1  # mamba_ssm-1.0.1+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 ```
 
-The .whl files of causal_conv1d and mamba_ssm could be found [here(Baidu)][https://pan.baidu.com/s/1SURk7jV1zfe-3QpZpbtljQ?pwd=mpc8].
+The .whl files of causal_conv1d and mamba_ssm could be found [here(Baidu)](https://pan.baidu.com/s/1SURk7jV1zfe-3QpZpbtljQ?pwd=mpc8).
 
 ### 3.Checkpoint  Download 
 
 ### 4.Data Preparation
 
-[MSRS][https://github.com/Linfeng-Tang/MSRS], [RoadScene][https://github.com/hanna-xu/RoadScene], [M3FD][https://github.com/JinyuanLiu-CV/TarDAL], [Harvard medical dataset][http://www.med.harvard.edu/AANLIB/home.html]
+[MSRS](https://github.com/Linfeng-Tang/MSRS), [RoadScene](https://github.com/hanna-xu/RoadScene), [M3FD](https://github.com/JinyuanLiu-CV/TarDAL), [Harvard medical dataset](http://www.med.harvard.edu/AANLIB/home.html)
 
 Download the Infrared-Visible Fusion (IVF) and Medical Image Fusion (MIF) dataset and place the paired images in the folder `'./Datasets'`. Such as :
 
