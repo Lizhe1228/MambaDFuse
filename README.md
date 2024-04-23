@@ -39,20 +39,15 @@ pip install causal_conv1d==1.0.0  # causal_conv1d-1.0.0+cu118torch1.13cxx11abiFA
 pip install mamba_ssm==1.0.1  # mamba_ssm-1.0.1+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 ```
 
-The .whl files of causal_conv1d and mamba_ssm could be found here.
-
-[Baidu]: https://pan.baidu.com/s/1SURk7jV1zfe-3QpZpbtljQ?pwd=mpc8
+The .whl files of causal_conv1d and mamba_ssm could be found [here(Baidu)][https://pan.baidu.com/s/1SURk7jV1zfe-3QpZpbtljQ?pwd=mpc8].
 
 ### 3.Checkpoint  Download 
 
 ### 4.Data Preparation
 
-[MSRS]: https://github.com/Linfeng-Tang/MSRS	"MSRS"
-[RoadScene]: https://github.com/hanna-xu/RoadScene	"RoadScene"
-[M3FD]: https://github.com/JinyuanLiu-CV/TarDAL	"M3FD"
-[Harvard medical dataset]: http://www.med.harvard.edu/AANLIB/home.html
+[MSRS][https://github.com/Linfeng-Tang/MSRS], [RoadScene][https://github.com/hanna-xu/RoadScene], [M3FD][https://github.com/JinyuanLiu-CV/TarDAL], [Harvard medical dataset][http://www.med.harvard.edu/AANLIB/home.html]
 
-Download the Infrared-Visible Fusion (IVF) and Medical Image Fusion (MIF) dataset and place the paired images in the folder `'./Datasets'`.Such as 
+Download the Infrared-Visible Fusion (IVF) and Medical Image Fusion (MIF) dataset and place the paired images in the folder `'./Datasets'`. Such as :
 
 ```
 MambaDFuse
@@ -105,39 +100,39 @@ You may first modify the configuration file in the folder `./options`, such as `
 
 #### VIF
 
-`python -m torch.distributed.launch --nproc_per_node=2 --master_port=1234 train_MambaDFuse.py --opt options/MambaDFuse/train_mambadfuse_vif.json  --dist True`
+```
+python -m torch.distributed.launch --nproc_per_node=2 --master_port=1234 train_MambaDFuse.py --opt options/MambaDFuse/train_mambadfuse_vif.json  --dist True
+```
 
 #### MIF
 
-`python -m torch.distributed.launch --nproc_per_node=2 --master_port=1234 train_MambaDFuse.py --opt options/MambaDFuse/train_mambadfuse_med.json  --dist True`
+```
+python -m torch.distributed.launch --nproc_per_node=2 --master_port=1234 train_MambaDFuse.py --opt options/MambaDFuse/train_mambadfuse_med.json  --dist True
+```
 
 ### 6.Testing Examples
 
 #### VIF
 
-`python test_MambaDFuse.py --model_path=./Model/Infrared_Visible_Fusion/Infrared_Visible_Fusion/models/ --iter_number=10000 --dataset=VIR --A_dir=IR  --B_dir=VI_Y`
+```
+python test_MambaDFuse.py --model_path=./Model/Infrared_Visible_Fusion/Infrared_Visible_Fusion/models/ --iter_number=10000 --dataset=VIR --A_dir=IR  --B_dir=VI_Y
+```
 
 #### MIF
 
-`python test_MambaDFuse.py --model_path=./Model/Medical_Fusion-SPECT-MRI/Medical_Fusion/models/  --iter_number=10000 --dataset=SPECT-MRI --A_dir=MRI --B_dir=SPECT_Y`
+```
+python test_MambaDFuse.py --model_path=./Model/Medical_Fusion-SPECT-MRI/Medical_Fusion/models/  --iter_number=10000 --dataset=SPECT-MRI --A_dir=MRI --B_dir=SPECT_Y
+```
 
 ### 7.Evaluation and Pre-Processing
 
-Please refer to
-
-[this link]: https://github.com/Linfeng-Tang/Evaluation-for-Image-Fusion
-
- and 
-
-[this link]: https://github.com/hanna-xu/utils
-
-.
+Please refer to [this link][https://github.com/Linfeng-Tang/Evaluation-for-Image-Fusion ] and [this link][https://github.com/hanna-xu/utils].
 
 ## MambaDFuse
 
 ### Illustration of our MambaDFuse model.
 
-![](https://lizhe1228-img-1301547619.cos.ap-beijing.myqcloud.com/img/202404232209312.png)
+![](./overall.png)
 
 ### Illustration of our Shallow Fuse module.
 
