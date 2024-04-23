@@ -39,7 +39,7 @@ pip install causal_conv1d==1.0.0  # causal_conv1d-1.0.0+cu118torch1.13cxx11abiFA
 pip install mamba_ssm==1.0.1  # mamba_ssm-1.0.1+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 ```
 
-The .whl files of causal_conv1d and mamba_ssm could be found [here(Baidu)](https://pan.baidu.com/s/1SURk7jV1zfe-3QpZpbtljQ?pwd=mpc8).
+The .whl files of causal_conv1d and mamba_ssm could be found [here(Baidu)](https://pan.baidu.com/s/1SURk7jV1zfe-3QpZpbtljQ?pwd=mpc8). After installing the Mamba library, replace the mamba_simple.py file in the installation directory with the `./mamba_simple.py` in this repositorie. The implementation of the Multi-modal Mamba Block (M3 Block) is located in this file.
 
 ### 3.Checkpoint  Download 
 
@@ -126,7 +126,7 @@ python test_MambaDFuse.py --model_path=./Model/Medical_Fusion-SPECT-MRI/Medical_
 
 ### 7.Evaluation and Pre-Processing
 
-Please refer to [this link](https://github.com/Linfeng-Tang/Evaluation-for-Image-Fusion)and [this link](https://github.com/hanna-xu/utils).
+Please refer to [this link](https://github.com/Linfeng-Tang/Evaluation-for-Image-Fusion) and [this link](https://github.com/hanna-xu/utils).
 
 ## MambaDFuse
 
@@ -134,10 +134,14 @@ Please refer to [this link](https://github.com/Linfeng-Tang/Evaluation-for-Image
 
 ![](./img/overall.png)
 
-### Illustration of our Shallow Fuse module.
+### Illustration of our Shallow Fuse Module.
 
 ![](./img/shallow.png)
 
-### Illustration of our Deep Fuse module.
+### Illustration of our Deep Fuse Module.
 
 ![](./img/deep.png)
+
+## Acknowledgement
+
+The codes are heavily based on [SwinFusion](https://github.com/Linfeng-Tang/SwinFusion). Please also follow their licenses. Thanks for their awesome works.
