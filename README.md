@@ -39,7 +39,7 @@ pip install causal_conv1d==1.0.0  # causal_conv1d-1.0.0+cu118torch1.13cxx11abiFA
 pip install mamba_ssm==1.0.1  # mamba_ssm-1.0.1+cu118torch1.13cxx11abiFALSE-cp38-cp38-linux_x86_64.whl
 ```
 
-The .whl files of causal_conv1d and mamba_ssm could be found [here(Baidu)](https://pan.baidu.com/s/1SURk7jV1zfe-3QpZpbtljQ?pwd=mpc8). After installing the Mamba library, replace the mamba_simple.py file in the installation directory with the `./mamba_simple.py` in this repositorie. The implementation of the Multi-modal Mamba Block (M3 Block) is located in this file.
+The .whl files of causal_conv1d and mamba_ssm could be found [here(Baidu)](https://pan.baidu.com/s/1SURk7jV1zfe-3QpZpbtljQ?pwd=mpc8). After installing the Mamba library, replace the mamba_simple.py file in the installation directory with the `./mamba_simple.py` in this repository. The implementation of the Multi-modal Mamba Block (M3 Block) is located in this file.
 
 ### 3.Checkpoint  Download 
 
