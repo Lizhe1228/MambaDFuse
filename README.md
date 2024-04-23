@@ -126,18 +126,18 @@ python test_MambaDFuse.py --model_path=./Model/Medical_Fusion-SPECT-MRI/Medical_
 
 ### 7.Evaluation and Pre-Processing
 
-Please refer to [this link][https://github.com/Linfeng-Tang/Evaluation-for-Image-Fusion ] and [this link][https://github.com/hanna-xu/utils].
+Please refer to [this link](https://github.com/Linfeng-Tang/Evaluation-for-Image-Fusion)and [this link](https://github.com/hanna-xu/utils).
 
 ## MambaDFuse
 
 ### Illustration of our MambaDFuse model.
 
-![](./overall.png)
+![](./img/overall.png)
 
 ### Illustration of our Shallow Fuse module.
 
-![](https://lizhe1228-img-1301547619.cos.ap-beijing.myqcloud.com/img/202404232211742.png)
+![](./img/shallow.png)
 
 ### Illustration of our Deep Fuse module.
 
-![](https://lizhe1228-img-1301547619.cos.ap-beijing.myqcloud.com/img/202404232212825.png)
+![](./img/deep.png)
