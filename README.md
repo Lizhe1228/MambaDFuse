@@ -96,7 +96,7 @@ MambaDFuse
 
 ### 5.Training Examples
 
-You may first modify the configuration file in the folder `./options`, such as `gpu_ids`, `path.root`, `dataroot_A`, `dataroot_B`, `dataloader_batch_size` and so on.
+You may first modify the configuration file in the folder `./options/MambaDFuse`, such as `gpu_ids`, `path.root`, `dataroot_A`, `dataroot_B`, `dataloader_batch_size` and so on.
 
 #### VIF
 
