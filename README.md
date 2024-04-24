@@ -9,13 +9,11 @@ Official implementation for “MambaDFuse: A Mamba-based Dual-phase Model for Mu
 ## Citation
 
 ```tex
-@misc{li2024mambadfuse,
-      title={MambaDFuse: A Mamba-based Dual-phase Model for Multi-modality Image Fusion}, 
-      author={Zhe Li and Haiwei Pan and Kejia Zhang and Yuhua Wang and Fengming Yu},
-      year={2024},
-      eprint={2404.08406},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{li2024mambadfuse,
+  title={MambaDFuse: A Mamba-based Dual-phase Model for Multi-modality Image Fusion},
+  author={Li, Zhe and Pan, Haiwei and Zhang, Kejia and Wang, Yuhua and Yu, Fengming},
+  journal={arXiv preprint arXiv:2404.08406},
+  year={2024}
 }
 ```
 
@@ -41,7 +39,9 @@ pip install mamba_ssm==1.0.1  # mamba_ssm-1.0.1+cu118torch1.13cxx11abiFALSE-cp38
 
 The .whl files of causal_conv1d and mamba_ssm could be found [here(Baidu)](https://pan.baidu.com/s/1SURk7jV1zfe-3QpZpbtljQ?pwd=mpc8). After installing the Mamba library, replace the mamba_simple.py file in the installation directory with the `./mamba_simple.py` in this repository. The implementation of the Multi-modal Mamba Block (M3 Block) is located in this file.
 
-### 3.Checkpoint  Download 
+### 3.Checkpoint  
+
+Checkpoints arelocated in the folder `./Model/Infrared_Visible_Fusion/Infrared_Visible_Fusion/models`
 
 ### 4.Data Preparation
 
@@ -124,10 +124,6 @@ python test_MambaDFuse.py --model_path=./Model/Infrared_Visible_Fusion/Infrared_
 python test_MambaDFuse.py --model_path=./Model/Medical_Fusion-SPECT-MRI/Medical_Fusion/models/  --iter_number=10000 --dataset=SPECT-MRI --A_dir=MRI --B_dir=SPECT_Y
 ```
 
-### 7.Evaluation and Pre-Processing
-
-Please refer to [this link](https://github.com/Linfeng-Tang/Evaluation-for-Image-Fusion) and [this link](https://github.com/hanna-xu/utils).
-
 ## MambaDFuse
 
 ### Illustration of our MambaDFuse model.
@@ -142,6 +138,16 @@ Please refer to [this link](https://github.com/Linfeng-Tang/Evaluation-for-Image
 
 ![](./img/deep.png)
 
+### Visual Comparison
+
+#### VIF
+
+![](./img/VIF.png)
+
+#### MIF
+
+![](./img/MIF.png)
+
 ## Acknowledgement
 
-The codes are heavily based on [SwinFusion](https://github.com/Linfeng-Tang/SwinFusion). Please also follow their licenses. Thanks for their awesome works.
+The codes are heavily based on [SwinFusion](https://github.com/Linfeng-Tang/SwinFusion). And some inspiration for my ideas comes from [Pan-Mamba](https://github.com/alexhe101/Pan-Mamba). Thanks for their awesome works. 
